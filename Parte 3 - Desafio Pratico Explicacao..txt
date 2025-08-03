@@ -1,0 +1,17 @@
+A soluçao para extrair os dados de um site que nao possui o link direto dos dados pode ser feita usando a biblioteca Selenium WebDriver. Ela simula iterações do usuario com a pagina, como cliques, preenchimento de campos, navegação por meio de menus a até mesmo fazer login e senha. As etapas para a solução do desafio são:
+
+1- Abrir o conteudo da pagina pelo link disponibilizado.
+  https://sidra.ibge.gov.br/pesquisa/snipc/ipca/quadros/brasil/junho-2025
+2- Localizar o menu 'Tabelas', criar a ação de clique para exibir as tabelas disponíveis.
+3- Pesquisar pelo link, da tabela, desejado e clicar.
+4- Selecionar os itens que irião que fazer parte do arquivo.
+5- Encontrar o botão que disponibiliza os link.
+6- Encontrar e criar a ação de clique para escolher a opção de download do arquivo, como CSV ou XLS ou a que melhor se enquadra ao projeto.
+7- Opçoes disponiveis para integrar o ETL  
+  a)Automatizar o clique de download e salvar o arquivo diretamente
+  b)Em um arquivo .txt salvar o link disponível para uso posterior com requests no processo de ETL.
+
+8- OU, caso não haja na pagina JavavaScript dinâmico para renderizar os dados, pode ser usada apenas a biblioteca requests e Beautifulsoup para acessar o elementos HTML da pagina, localizar o elemento <table> e extrair os dados diretamente.
+
+O uso de Selenium WebDriver nesse processo se torna importante para sites que tem em seu escopo a renderização dinâmica com JavaScript, quando bibliotecas como requests ou BeautifulSoup não são suficientes para realizar o acesso aos conteúdos das paginas.
+
