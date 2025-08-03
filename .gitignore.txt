@@ -1,0 +1,12 @@
+# Ignora o ambiente virtual
+venv-ipca/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
